@@ -9,25 +9,25 @@ function Projects() {
       title: "YouTube Transcript Summarizer",
       description:
         "The YouTube Transcript Summarizer generates concise video summaries, helping users save time. It's built with Python, using the YouTube API to fetch transcripts and NLTK for processing.",
-      image: "/public/assets/c1052ea1c2d45d46abbac1849c71969.png",
+      image: "/assets/c1052ea1c2d45d46abbac1849c71969.png",
     },
     {
       title: "Smart Parking System",
       description:
         "The real-time parking spot monitor displays available parking spots using an ultrasonic sensor connected to an Arduino Nano. Built with C/C++, it updates parking availability in real-time.",
-      image: "/public/assets/b3d87292f1f458636a8d28a6a20e7853.jpeg",
+      image: "/assets/b3d87292f1f458636a8d28a6a20e7853.jpeg",
     },
     {
       title: "College Timetable Viewer",
       description:
         "This Flutter project, developed in Dart, displays the timetable for college sections based on user selection. It is integrated with Firebase for real-time updates and data management.",
-      image: "/public/assets/fbe5b4a0b6008eec7439f8e80209faae.jpeg",
+      image: "/assets/fbe5b4a0b6008eec7439f8e80209faae.jpeg",
     },
     {
       title: "2D Physics Simulator",
       description:
         "The 2D Physics Simulator visualizes various physics operations through interactive simulations. Built with C and SQL, it provides a realistic way to understand fundamental physics concepts in action.",
-      image: "/public/assets/b3d87292f1f458636a8d28a6a20e7853.jpeg",
+      image: "/assets/b3d87292f1f458636a8d28a6a20e7853.jpeg",
     },
   ];
 
