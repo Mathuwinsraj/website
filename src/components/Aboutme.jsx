@@ -9,31 +9,31 @@ function AboutMe() {
       title: "Novels",
       content:
         "My obsession peaked after finishing the Harry Potter series in 5 days! I now mostly read fiction, non-fiction, and murder mysteries. I love exploring complex plots and deep character development.",
-      image: "/public/assets/yyy.jpg", 
+      image: /assets/yyy.jpg", 
     },
     {
       title: "Sports",
       content:
         "I play football, watch a lot of cricket, and was in my school team for throwball and basketball. My passion for sports keeps me fit and active.",
-      image: "/public/assets/yoo.png", 
+      image: "/assets/yoo.png", 
     },
     {
       title: "Art",
       content:
         "I started sketching in art class and have since developed a love for all types of art. I find creating art an excellent way to express myself.",
-      image: "/public/assets/OIP.jpeg", 
+      image: "/assets/OIP.jpeg", 
     },
     {
       title: "Docs",
       content:
         "I really like reading true crime documentaries and analyzing criminal psychology. It's fascinating to learn about criminal behavior and the justice system.",
-      image: "/public/assets/ccc.jpg",
+      image: "/assets/ccc.jpg",
     },
     {
       title: "Others",
       content:
         "I keep up with world affairs, enjoy photography, gaming, and chess. I love to debate on various topics, and sometimes I also photograph my dog.",
-      image: "/public/assets/dd.jpg", 
+      image: "/assets/dd.jpg", 
     },
   ];
 
