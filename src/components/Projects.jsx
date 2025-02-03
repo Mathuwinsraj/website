@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 function Projects() {
-  const [selectedIndex, setSelectedIndex] = useState(null); 
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
   const projects = [
     {
@@ -27,15 +27,16 @@ function Projects() {
       title: "2D Physics Simulator",
       description:
         "The 2D Physics Simulator visualizes various physics operations through interactive simulations. Built with C and SQL, it provides a realistic way to understand fundamental physics concepts in action.",
-      image: "/assets/b3d87292f1f458636a8d28a6a20e7853.jpeg",
+      image: "/assets/physics-simulator.jpg", // ✅ Updated to a unique image
     },
   ];
 
   return (
     <section
       id="projects"
-      className="py-20 relative flex flex-col items-center bg-gradient-to-b from-[#000000] via-[#091132] to-[#000001]"
+      className="py-20 flex flex-col items-center bg-gradient-to-b from-[#000000] via-[#091132] to-[#000001]"
     >
+      {/* Title */}
       <motion.h2
         className="text-5xl font-extrabold text-white tracking-wide drop-shadow-lg mb-8"
         initial={{ opacity: 0, y: 20 }}
@@ -46,33 +47,35 @@ function Projects() {
         PROJECTS
       </motion.h2>
 
-      <motion.div className="flex sm:flex-row gap-6 px-6 w-full max-w-6xl overflow-x-auto sm:justify-start sm:flex-nowrap flex-wrap">
+      {/* Projects Grid */}
+      <motion.div className="flex flex-wrap sm:flex-nowrap gap-6 px-6 w-full max-w-6xl overflow-x-auto sm:justify-start scrollbar-hidden">
         {projects.map((project, index) => (
           <motion.div
             key={index}
             className="relative w-full sm:w-72 h-auto sm:h-96 p-6 rounded-2xl shadow-lg text-center bg-black/40 backdrop-blur-lg border border-gray-700 overflow-hidden flex flex-col justify-between items-center cursor-pointer"
-            onMouseEnter={() => setSelectedIndex(index)} 
-            onMouseLeave={() => setSelectedIndex(null)} 
+            onMouseEnter={() => setSelectedIndex(index)}
+            onMouseLeave={() => setSelectedIndex(null)}
             whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.1, ease: "easeInOut" }}
             viewport={{ once: true }}
           >
-          
+            {/* Image */}
             {selectedIndex !== index && (
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-56 object-cover rounded-2xl mb-4" 
+                className="w-full h-56 object-cover rounded-2xl mb-4"
               />
             )}
 
-           
+            {/* Title */}
             <h3 className="text-xl font-bold text-white uppercase tracking-widest mb-2">
               {project.title}
             </h3>
 
+            {/* Description (only shown on hover) */}
             {selectedIndex === index && (
               <motion.p
                 className="text-sm text-gray-300 font-medium mt-2 px-2 overflow-hidden text-ellipsis whitespace-normal"
@@ -85,14 +88,16 @@ function Projects() {
             )}
           </motion.div>
         ))}
+
+        {/* Currently Working On... Card */}
         <motion.div
           className="relative w-full sm:w-72 h-auto sm:h-96 p-6 rounded-2xl shadow-lg text-center bg-black/40 backdrop-blur-lg border border-gray-700 overflow-hidden flex flex-col justify-between items-center"
-          onMouseEnter={() => setSelectedIndex(index)} 
-          onMouseLeave={() => setSelectedIndex(null)} 
+          onMouseEnter={() => setSelectedIndex(null)}
+          onMouseLeave={() => setSelectedIndex(null)}
           whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
           viewport={{ once: true }}
         >
           <h3 className="text-xl font-bold text-white uppercase tracking-widest mb-4">
@@ -111,3 +116,4 @@ function Projects() {
 }
 
 export default Projects;
+
