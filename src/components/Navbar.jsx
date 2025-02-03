@@ -10,6 +10,7 @@ function Navbar() {
     <nav className="fixed top-0 w-full bg-black/50 backdrop-blur-md shadow-lg z-20">
       <div className="flex justify-between items-center px-6 py-3 md:px-10 md:py-2">
         
+        {/* Profile Section */}
         <div className="flex items-center space-x-2">
           <img
             src="/assets/1000046389.jpg"
@@ -19,19 +20,19 @@ function Navbar() {
           <span className="text-1xl font-bold mt-1 text-white tracking-wide">MADHU WINSRAJ</span>
         </div>
 
-        
+        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X className="w-6 h-6 text-white" /> : <Menu className="w-6 h-6 text-white" />}
           </button>
         </div>
 
-        
-        <div className={`md:flex space-x-4 hidden`}>
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex space-x-4">
           <NavLink href="#home">Home</NavLink>
           <NavLink href="#about">About Me</NavLink> 
-          
-          
+
+          {/* Education Dropdown */}
           <div
             className="relative"
             onMouseEnter={() => setShowEducation(true)}
@@ -64,7 +65,7 @@ function Navbar() {
         </div>
       </div>
 
-      
+      {/* Mobile Navigation Dropdown */}
       {isOpen && (
         <motion.div
           className="md:hidden bg-black/80 backdrop-blur-lg text-white flex flex-col items-center space-y-4 py-4"
@@ -82,7 +83,7 @@ function Navbar() {
   );
 }
 
-
+// Navigation Link Component
 const NavLink = ({ href, children, onClick }) => (
   <motion.a
     href={href}
