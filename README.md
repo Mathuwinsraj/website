@@ -1,13 +1,18 @@
-<<<<<<< HEAD
-# React + Vite
+# Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a personal website project built with React and deployed on Vercel.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
-# website
-Personal-Website
->>>>>>> 9968c8ec99af860e9b8ceedc5c2a03b4ad481150
+- React
+- Vite (for fast development and build)
+- Tailwind CSS (for styling)
+- Vercel (for deployment)
+
+## Installation Instructions
+
+To run this project locally on your machine:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Mathuwinsraj/website.git
