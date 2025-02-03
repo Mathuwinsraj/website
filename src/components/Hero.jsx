@@ -27,7 +27,7 @@ function Hero() {
       className="h-screen flex flex-col justify-center items-center text-center px-6 relative bg-gradient-to-b from-[#000000] via-[#091132] to-[#000001]"
     >
       <motion.img
-        src="src/assets/1000046389.jpg"
+        src="public/assets/1000046389.jpg"
         alt="Profile"
         className="w-48 h-48 rounded-full border-1 border-white shadow-[0_0_30px_rgba(255,255,255,0.5)]"
         animate={{ y: [0, -10, 0] }}
