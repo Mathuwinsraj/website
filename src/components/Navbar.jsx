@@ -12,7 +12,7 @@ function Navbar() {
         
         <div className="flex items-center space-x-2">
           <img
-            src="/assets/1000046389.jpg"
+            src="/public/assets/1000046389.jpg"
             alt="Profile"
             className="w-10 h-10 rounded-full border-0 border-white shadow-lg"
           />
