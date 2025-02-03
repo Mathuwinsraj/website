@@ -27,7 +27,7 @@ function Projects() {
       title: "2D Physics Simulator",
       description:
         "The 2D Physics Simulator visualizes various physics operations through interactive simulations. Built with C and SQL, it provides a realistic way to understand fundamental physics concepts in action.",
-      image: "/assets/physics-simulator.jpg", // ✅ Updated to a unique image
+      image: "/assets/b3d87292f1f458636a8d28a6a20e7853.jpeg", // ✅ Updated to a unique image
     },
   ];
 
