@@ -9,7 +9,7 @@ function AboutMe() {
       title: "Novels",
       content:
         "My obsession peaked after finishing the Harry Potter series in 5 days! I now mostly read fiction, non-fiction, and murder mysteries. I love exploring complex plots and deep character development.",
-      image: "/assets/yyy.jpg", // ✅ Fixed missing opening quote
+      image: "/assets/yyy.jpg", 
     },
     {
       title: "Sports",
@@ -100,7 +100,7 @@ function AboutMe() {
                 className="text-xs text-gray-300 font-medium flex-grow flex items-center justify-center"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1, transition: { duration: 0.3 } }}
-                exit={{ opacity: 0, scale: 0.8, transition: { duration: 0.3 } }} // ✅ Fixed animation
+                exit={{ opacity: 0, scale: 0.8, transition: { duration: 0.3 } }}
               >
                 {section.content}
               </motion.p>
